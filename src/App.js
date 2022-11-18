@@ -4,21 +4,15 @@ import Cards from './components/Cards';
 import WelcomeBack from './components/WelcomeBack';
 import Slider from './components/Slider';
 import Navbar from './components/Navbar';
+import Table from './components/Table';
+
 
 function App() {
   return (
     <>
-    {/* <div className='lg:flex w-full  '> */}
-<Navbar/>
-  <Cards  />
-  {/* <Cards /> */} 
-    {/* </div> */}
+    <Navbar/>
   <WelcomeBack/>
-  
-  <Slider/>
-
-  
-
+  <Table/>
     </>
   );
 }

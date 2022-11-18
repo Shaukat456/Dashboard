@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        CardH:['Public Sans', "sans-serif"],
+        'CardH':['Public Sans', "sans-serif"],
       },
       colors:{
         // para:'#005249'
-        base:'#00AB55'
+        baseC:'#00AB55'
       }
     },
   },

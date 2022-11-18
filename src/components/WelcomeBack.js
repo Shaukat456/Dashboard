@@ -14,7 +14,7 @@ const WelcomeBack = () => {
       </h1>
       <p class="mb-8 leading-relaxed text-gray-500 my-5 lg:text-3xl">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
       <div class="flex justify-center">
-        <button class="inline-flex text-white bg-base border-0 py-2 px-6 focus:outline-none hover:bg-green-800 rounded-xl md:text-lg  font-bold  ">Go Now</button>
+        <button class="inline-flex text-white bg-baseC border-0 py-2 px-6 focus:outline-none hover:bg-green-800 rounded-xl md:text-lg  font-bold  ">Go Now</button>
         
       </div>
     </div>
