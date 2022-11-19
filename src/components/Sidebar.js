@@ -13,7 +13,7 @@ export const Sidebar = () => {
   // console.log(typeof GeneralArr)
 
   return (
-    <div>
+    <div className="h-screen">
       <aside className="w-72 " aria-label="Sidebar">
 
         <div className="overflow-y-scroll  h-screen py-10  rounded dark:bg-gray-800">

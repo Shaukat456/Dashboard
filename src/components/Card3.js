@@ -3,7 +3,7 @@ import React from 'react'
  const Card3 = () => {
   return (
     <div>
-<div id='cardbg' className='flex font-CardH bg-blue-500 my-4 text-white w-2/5 p-6  space-x-9 rounded-2xl' >
+<div id='cardbg' className='flex font-CardH bg-blue-500 my-4 text-white w-full p-6  space-x-9 rounded-2xl' >
 <div className="radial-progress text-xl  text-green-800" style={{"--value":75 , "--thickness": "4px"}}>
     <h1 className='text-white text-base font-semibold font-CardH'>75%</h1>
 </div>
