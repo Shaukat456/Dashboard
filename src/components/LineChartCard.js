@@ -9,6 +9,7 @@ export const LineChartCard = () => {
 
             <h3 className='text-gray-500 text-start'>(+43%) than last year</h3>
 
+
             </div>
         <LineChart/>
 
