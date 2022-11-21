@@ -6,7 +6,7 @@ import { FaEllipsisV } from "react-icons/fa";
     <div>
 
 <div class="overflow-x-auto relative text-base shadow-md sm:rounded-lg">
-    <h1 className='p-5 lg:text-3xl md:text-2xl font-semibold'>NEW INVOICE</h1>
+    <h1 className='p-5 lg:text-2xl md:text-2xl font-semibold text-gray-400 '>NEW INVOICE</h1>
     <table class="w-full text-lg text-left  dark:text-gray-400 ">
         <thead class="  text-gray-500 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400 lg:text-lg md:text-sm  text-xs  " >
             <tr>
