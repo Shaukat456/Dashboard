@@ -10,8 +10,8 @@ import Table from './components/Table';
 function App() {
   return (
     <>
-    <Navbar/>
-  <WelcomeBack/>
+    {/* <Navbar/>
+  <WelcomeBack/> */}
   <Table/>
     </>
   );
