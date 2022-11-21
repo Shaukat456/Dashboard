@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 
  const Table = ({ProductName, Color , Category , status}) => {
@@ -5,11 +6,12 @@ import React from 'react'
     <div>
 
 <div class="overflow-x-auto relative text-base shadow-md sm:rounded-lg">
-    <table class="w-full text-lg text-left text-gray-500 dark:text-gray-400">
-        <thead class=" text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-lg">
+    <h1 className='p-5 text-3xl font-semibold'>NEW INVOICE</h1>
+    <table class="w-full text-lg text-left  dark:text-gray-400 ">
+        <thead class=" font-CardH text-gray-500 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400 lg:text-lg md:text-base  text-sm font-extralight " >
             <tr>
                 <th scope="col" class="py-3 px-6">
-                    Product name
+                Invoice ID
                 </th>
                 <th scope="col" class="py-3 px-6">
                     Color
@@ -37,9 +39,9 @@ import React from 'react'
                     Laptop
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className='  font-semibold  text-red-800 bg-red-200 text-sm w-fit  rounded-xl px-5'>
 
-In Progress
+Out of Date
 </h1>
                 </td>
                 <td class="py-4 px-6">
@@ -63,7 +65,7 @@ In Progress
                            
 
                             </div> */}
-                       <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                       <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-fit rounded-xl px-5'>
 
                        In Progress
                        </h1>
@@ -84,9 +86,9 @@ In Progress
                     Accessories
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className='  font-semibold  text-red-800 bg-red-200 text-sm w-fit  rounded-xl px-5'>
 
-In Progress
+Out of Date
 </h1>
                 </td>
                 <td class="py-4 px-6">
@@ -104,7 +106,7 @@ In Progress
                     Phone
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-fit rounded-xl px-5'>
 
 In Progress
 </h1>
@@ -124,13 +126,18 @@ In Progress
                     Wearables
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className='  font-semibold  text-blue-500 bg-blue-200 text-sm w-fit rounded-xl px-5'>
 
-In Progress
+Paid
 </h1>
                 </td>
                 <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    {/* <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"> */}
+                    .
+                    .
+                    .
+                    {/* <FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical"  className='text-black bg-black' /> */}
+                    {/* </a> */}
                 </td>
             </tr>
         </tbody>
