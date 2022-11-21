@@ -16,7 +16,7 @@ function App() {
     <>
     <div className='flex'>
     <Sidebar/>
-    <Navbar/>
+    {/* <Navbar/> */}
     <WelcomeBack/>
 </div>
     <Render movies={TopAppData}/>
