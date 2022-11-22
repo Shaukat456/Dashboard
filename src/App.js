@@ -14,19 +14,22 @@ function App() {
   console.log(TopAppData)
   return (
     <>
-    <div className='flex'>
-    <Sidebar/>
+    {/* <div className='flex'>
+    <Sidebar/> */}
     {/* <Navbar/> */}
-    <WelcomeBack/>
-</div>
-    <Render movies={TopAppData}/>
-    <Table/>
+
+    {/* <WelcomeBack/> */}
+{/* </div> */}
+    {/* <Render movies={TopAppData}/> */}
+    {/* <Table/> */}
     {/* </div> */}
     {/* <Navbar/>
   <WelcomeBack/> */}
   {/* <Table/> */}
 {/* <Render /> */}
-{/* <TopAuthors/> */}
+<TopAuthors/>
+{/* <Sidebar/> */}
+{/* <Navbar/> */}
     </>
   );
 }

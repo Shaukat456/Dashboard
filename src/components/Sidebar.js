@@ -44,7 +44,7 @@ export const Sidebar = () => {
             <div className="flex items-center">
               {/* <FaEllipsisV/> */}
               <figure>
-                <img width={40} src={Avatar} alt="" />
+                <img width={40} src={Avatar} alt="" className='rounded-2xl'/>
               </figure>
               
               <div className="flex font-semibold mx-5 flex-col ">
