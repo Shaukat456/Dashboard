@@ -27,6 +27,7 @@ function App() {
 <div className="lg:flex space-x-11">
 <LineChartCard/>
 </div>
+
 <TopAuthors/>
     </div>
 
