@@ -13,6 +13,8 @@ import { LineChart } from './components/LineChart';
 import { LineChartCard } from './components/LineChartCard';
 import Card2  from './components/Card2';
 import Card3 from './components/Card3';
+import TopC from './components/TopC';
+import { Card } from '@material-tailwind/react';
 
 function App() {
   console.log(TopAppData)
@@ -36,6 +38,13 @@ function App() {
 
     <Card2/>
     <Card3/>
+    {/* <TopC/> */}
+   <div className="flex space-x-9">
+
+    <Cards/>
+    <Cards/>
+    <Cards/>
+   </div>
   {/* <LineChart/> */}
 {/* </div>
     {/* <Render movies={TopAppData}/> */}
