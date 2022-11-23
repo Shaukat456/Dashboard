@@ -28,7 +28,7 @@ export const TopAuthors = () => {
   ];
   return (
     <>
-    <div className="rounded-2xl  w-3/12 p-4 bg-white ">
+    <div className="rounded-2xl  lg:w-3/12 md:3/12 p-4 bg-white ">
 
     <h1 className="p-3 font-CardH text-2xl font-semibold">Top Authors</h1>
     {

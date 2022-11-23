@@ -27,9 +27,9 @@ function App() {
   <WelcomeBack/> */}
   {/* <Table/> */}
 {/* <Render /> */}
-<TopAuthors/>
 {/* <Sidebar/> */}
 {/* <Navbar/> */}
+<TopAuthors/>
     </>
   );
 }
