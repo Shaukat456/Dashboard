@@ -26,7 +26,7 @@ import React from 'react'
         </figure>
       </a>
         <figure >
-            <img height={20} width={30} src={require("../avatar.png")} alt="" className='rounded-2xl'/>
+            <img  width={30} src={require("../avatar.png")} alt="" className='rounded-2xl'/>
         </figure>
       <a className="ml-3 text-gray-500">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

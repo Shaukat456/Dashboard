@@ -21,6 +21,7 @@ function App() {
   return (
     <>
     <div className='flex space-y-6 '>
+      <Navbar/>
     <Sidebar/> 
     <div className="flex-col space-y-6">
     <WelcomeBack/>
