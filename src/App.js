@@ -9,17 +9,34 @@ import { Sidebar } from './components/Sidebar';
 import Render from './components/Render';
 import TopAppData from './TopAppData'
 import { TopAuthors } from './components/TopAuthors';
+import { LineChart } from './components/LineChart';
+import { LineChartCard } from './components/LineChartCard';
+import Card2  from './components/Card2';
+import Card3 from './components/Card3';
 
 function App() {
   console.log(TopAppData)
   return (
     <>
-    {/* <div className='flex'>
-    <Sidebar/> */}
-    {/* <Navbar/> */}
+    <div className='flex'>
+    <Sidebar/> 
+    <div className="flex-col">
+    <WelcomeBack/>
 
-    {/* <WelcomeBack/> */}
-{/* </div> */}
+
+<div className="lg:flex space-x-11">
+<LineChartCard/>
+</div>
+<TopAuthors/>
+    </div>
+
+    {/* <Navbar/> */}
+</div>
+
+    <Card2/>
+    <Card3/>
+  {/* <LineChart/> */}
+{/* </div>
     {/* <Render movies={TopAppData}/> */}
     {/* <Table/> */}
     {/* </div> */}
@@ -29,7 +46,7 @@ function App() {
 {/* <Render /> */}
 {/* <Sidebar/> */}
 {/* <Navbar/> */}
-<TopAuthors/>
+
     </>
   );
 }

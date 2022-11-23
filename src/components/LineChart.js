@@ -1,27 +1,64 @@
-import React from "react";
+import React from 'react';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
 
-const LineChart = () => {
-  const config = {
-    type: "line",
-    data: data,
-  };
+var faker = require("faker")
 
-  const labels = Utils.months({ count: 7 });
-  const data = {
-    labels: labels,
-    datasets: [
-      {
-        label: "My First Dataset",
-        data: [65, 59, 80, 81, 56, 55, 40],
-        fill: false,
-        bac
-        borderColor: "rgb(75, 192, 192)",
-        tension: 0.1,
-      },
-    ],
-  };
 
-  return <div></div>;
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      // position: 'top' ,
+    },
+    title: {
+      // display: true,
+      // text: '',
+    },
+  },
 };
 
-export default LineChart;
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'Asia ',
+      data: labels.map(() => faker.datatype.number({ min: -20 , max: 10 })),
+      borderColor: 'yellow',
+      backgroundColor: 'yellow',
+      
+    },
+    {
+      label: 'America',
+      data: labels.map(() => faker.datatype.number({ min: -13, max: 9 })),
+      borderColor: 'green',
+      backgroundColor: 'green',
+    },
+  ],
+};
+
+export function LineChart() {
+  return <Line options={options} data={data} />;
+}
