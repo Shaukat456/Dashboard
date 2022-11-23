@@ -4,7 +4,7 @@ import { FaTrophy, FaHeart ,FaWindows,FaAndroid ,FaApple ,FaSignal,FaShare} from
 const Cards = ({ total=2, qty = '18,500', percentg = 2.5, arrow, graph }) => {
   return (
     // <div classNameName="font-CardH  ">
-      <div className="w-full  p-6  flex justify-center  bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700  ">
+      <div className="w-full   p-6  flex justify-center  bg-white border border-gray-200 rounded-xl shadow-xl dark:bg-gray-800 dark:border-gray-700  ">
 
         <div className="flex flex-col">
           <a href="#">

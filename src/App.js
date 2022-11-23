@@ -14,23 +14,23 @@ import { LineChartCard } from './components/LineChartCard';
 import Card2  from './components/Card2';
 import Card3 from './components/Card3';
 import TopC from './components/TopC';
-import { Card } from '@material-tailwind/react';
+import { FaTrophy, FaHeart ,FaWindows,FaAndroid ,FaApple ,FaSignal} from "react-icons/fa";
 
 function App() {
   console.log(TopAppData)
   return (
     <>
-    <div className='flex'>
+    <div className='flex space-y-6 '>
     <Sidebar/> 
-    <div className="flex-col">
+    <div className="flex-col space-y-6">
     <WelcomeBack/>
 
 
-<div className="lg:flex space-x-11">
+<div className="lg:flex space-x-11 space-y-10">
 <LineChartCard/>
 </div>
 
-<TopAuthors/>
+<TopAuthors />
     </div>
 
     {/* <Navbar/> */}
@@ -39,7 +39,7 @@ function App() {
     <Card2/>
     <Card3/>
     {/* <TopC/> */}
-   <div className="flex space-x-9">
+   <div className="flex space-x-9 space0">
 
     <Cards/>
     <Cards/>
