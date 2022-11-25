@@ -1,15 +1,17 @@
 import React from 'react'
+import { FaEllipsisV } from "react-icons/fa";
 
  const Table = ({ProductName, Color , Category , status}) => {
   return (
     <div>
 
 <div class="overflow-x-auto relative text-base shadow-md sm:rounded-lg">
-    <table class="w-full text-lg text-left text-gray-500 dark:text-gray-400">
-        <thead class=" text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-lg">
+    <h1 className='p-5 lg:text-2xl md:text-2xl font-semibold text-gray-400 '>NEW INVOICE</h1>
+    <table class="w-full text-lg text-left  dark:text-gray-400 ">
+        <thead class="  text-gray-500 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400 lg:text-lg md:text-sm  text-xs  " >
             <tr>
                 <th scope="col" class="py-3 px-6">
-                    Product name
+                Invoice ID
                 </th>
                 <th scope="col" class="py-3 px-6">
                     Color
@@ -26,8 +28,8 @@ import React from 'react'
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700 md:text-sm  text-xs">
+                <th scope="row" class="md:text-sm  text-xs py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Apple MacBook Pro 17"
                 </th>
                 <td class="py-4 px-6">
@@ -37,16 +39,19 @@ import React from 'react'
                     Laptop
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className='  font-semibold  text-red-800 bg-red-200  sm:w-fit  rounded-xl px-5   min-w-fit max-w-fit md:text-sm  text-xs'>
 
-In Progress
+Out of Date
 </h1>
                 </td>
                 <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <button>
+                        {/* <FaDotCircle/> */}
+                    <FaEllipsisV/>
+                    </button>
                 </td>
             </tr>
-            <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+            <tr class="md:text-sm  text-xs  bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Microsoft Surface Pro
                 </th>
@@ -57,23 +62,28 @@ In Progress
                     Laptop PC
                 </td>
                 <td class="py-4  ">
+                    
                     {/* <div class="flex text-orange-600 items-center w-4/12 rounded-md  text-sm bg-yellow-400 mr-2"> */}
                         {/* <div class="h-2.5 w-1/5  bg-orange-400 mr-2">
                            
                            
 
                             </div> */}
-                       <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                       <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-fit rounded-xl px-5 md:text-sm  text-xs'>
 
                        In Progress
                        </h1>
                     {/* </div> */}
                 </td>
                 <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <button>
+                        {/* <FaDotCircle/> */}
+                    <FaEllipsisV/>
+                    </button>
+                    {/* <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">  </a> */}
                 </td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+            <tr class="bg-white border-b md:text-sm  text-xs dark:bg-gray-900 dark:border-gray-700">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Magic Mouse 2
                 </th>
@@ -84,16 +94,20 @@ In Progress
                     Accessories
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className='  font-semibold  text-red-800 bg-red-200  w-fit  rounded-xl px-5 md:text-sm   text-xs'>
 
-In Progress
+Out of Date
 </h1>
                 </td>
                 <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <button>
+                        {/* <FaDotCircle/> */}
+                    <FaEllipsisV/>
+                    </button>
+                    {/* <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a> */}
                 </td>
             </tr>
-            <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+            <tr class="md:text-sm  text-xs  bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Google Pixel Phone
                 </th>
@@ -104,16 +118,20 @@ In Progress
                     Phone
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className=' md:text-sm  text-xs font-semibold  text-[#B76E79] bg-yellow-100  w-fit rounded-xl px-5'>
 
 In Progress
 </h1>
                 </td>
-                <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <td class="py-4 px-6 ">
+                <button>
+                        {/* <FaDotCircle/> */}
+                    <FaEllipsisV/>
+                    </button>
+                    {/* <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a> */}
                 </td>
             </tr>
-            <tr>
+            <tr className='md:text-sm  text-xs'>
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Apple Watch 5
                 </th>
@@ -124,13 +142,19 @@ In Progress
                     Wearables
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-2/5 rounded-xl px-5'>
+                <h1 className=' md:text-sm  text-xs font-semibold  text-blue-500 bg-blue-200  w-fit rounded-xl px-5'>
 
-In Progress
+Paid
 </h1>
                 </td>
                 <td class="py-4 px-6">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    {/* <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"> */}
+                    <button>
+                        {/* <FaDotCircle/> */}
+                    <FaEllipsisV/>
+                    </button>
+                    {/* <FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical"  className='text-black bg-black' /> */}
+                    {/* </a> */}
                 </td>
             </tr>
         </tbody>

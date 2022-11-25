@@ -5,3 +5,15 @@
 
 
 
+body{
+    /* background-color: black; */
+    
+}
+
+
+#cardbg{
+    /* backdrop-filter: blur(50px); */
+    /* background-image: url('./avatar.png')   ; */
+    background-repeat: no-repeat;
+    
+}

@@ -1,13 +1,14 @@
 import React from "react";
+import { FaTrophy, FaHeart ,FaWindows,FaAndroid ,FaApple ,FaSignal,FaShare} from "react-icons/fa";
 
-const Cards = ({ total, qty = 18500, percentg = 2.5, arrow, graph }) => {
+const Cards = ({ total=2, qty = '18,500', percentg = 2.5, arrow, graph }) => {
   return (
     // <div classNameName="font-CardH  ">
-      <div className="max-w-lg  p-6  flex justify-center  bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700  ">
+      <div className="w-full   p-6  flex justify-center  bg-white border border-gray-200 rounded-xl shadow-xl dark:bg-gray-800 dark:border-gray-700  ">
 
         <div className="flex flex-col">
           <a href="#">
-            <h5 className="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-base my-1 font-semibold tracking-tight text-gray-900 dark:text-white">
               Total Active Users {total}
             </h5>
           </a>
@@ -15,8 +16,13 @@ const Cards = ({ total, qty = 18500, percentg = 2.5, arrow, graph }) => {
 
 
           <p className="mb-1 flex text-gray-500 dark:text-gray-400 font-bold">
+            <div className="bg-green-200 rounded-3xl w-fit py-1 px-2 ">
+            <FaShare color="green" />
+
+            </div>
             <figure className="mx-1"> 
-                <img src="https://minimals.cc/assets/illustrations/characters/character_3.png" width={9} height={5} alt="" />
+            
+                {/* <img src="https://minimals.cc/assets/illustrations/characters/character_3.png" width={9} height={5} alt="" /> */}
             </figure>
             {percentg}%
           </p>
@@ -25,11 +31,19 @@ const Cards = ({ total, qty = 18500, percentg = 2.5, arrow, graph }) => {
         See our guideline
     </a> */}
           {/* </div> */}
-          <h1 className="font-CardH font-semibold text-3xl"> {qty} </h1>
+          <h1 className="font-CardH font-semibold text-3xl "> {qty} </h1>
         </div>
         <figure className="mx-auto"> 
-                <img src="https://minimals.cc/assets/illustrations/characters/character_3.png" width={9} height={15} alt="" />
+                {/* <img src="https://minimals.cc/assets/illustrations/characters/character_3.png" width={9} height={15} alt="" /> */}
+           
             </figure>
+           
+           <div className="text-4xl flex items-center">
+
+           <FaSignal />
+           </div>
+
+
         {/* <svg
           className="mx-auto  w-10 h-10 mb-2 text-gray-500 dark:text-gray-400"
           aria-hidden="true"
