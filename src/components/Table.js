@@ -5,19 +5,19 @@ import { FaEllipsisV } from "react-icons/fa";
   return (
     <div>
 
-<div class="overflow-x-auto relative text-base shadow-md sm:rounded-lg">
-    <h1 className='p-5 lg:text-2xl md:text-2xl font-semibold text-gray-400 '>NEW INVOICE</h1>
-    <table class="w-full text-lg text-left  dark:text-gray-400 ">
-        <thead class="  text-gray-500 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400 lg:text-lg md:text-sm  text-xs  " >
-            <tr>
+<div class="overflow-x-auto relative text-base shadow-md sm:rounded-xl rounded-xl w-full">
+    <h1 className='p-5 lg:text-xl md:text-lg text-sm font-bold text-gray-900 font-CardH '>New Invoice</h1>
+    <table class="w-full text-lg text-left  dark:text-gray-400  ">
+        <thead class=" font-CardH text-gray-500  bg-gray-100 dark:bg-gray-700 dark:text-gray-400 lg:text-sm md:text-sm  text-xs   " >
+            <tr className=''>
                 <th scope="col" class="py-3 px-6">
                 Invoice ID
                 </th>
                 <th scope="col" class="py-3 px-6">
-                    Color
+                    Category
                 </th>
                 <th scope="col" class="py-3 px-6">
-                    Category
+                    Price 
                 </th>
                 <th scope="col" class="py-3 px-6">
                     Status
@@ -39,7 +39,7 @@ import { FaEllipsisV } from "react-icons/fa";
                     Laptop
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-red-800 bg-red-200  sm:w-fit  rounded-xl px-5   min-w-fit max-w-fit md:text-sm  text-xs'>
+                <h1 className='  font-semibold  text-red-800 bg-red-200  sm:max-w-fit rounded-xl px-5      text-xs'>
 
 Out of Date
 </h1>
@@ -69,10 +69,10 @@ Out of Date
                            
 
                             </div> */}
-                       <h1 className='  font-semibold  text-[#B76E79] bg-yellow-100 text-sm w-fit rounded-xl px-5 md:text-sm  text-xs'>
+                      <h1 className='   text-xs font-semibold  text-orange-600 bg-yellow-200  w-fit rounded-xl px-5'>
 
-                       In Progress
-                       </h1>
+In Progress
+</h1>
                     {/* </div> */}
                 </td>
                 <td class="py-4 px-6">
@@ -94,7 +94,7 @@ Out of Date
                     Accessories
                 </td>
                 <td class="py-4 ">
-                <h1 className='  font-semibold  text-red-800 bg-red-200  w-fit  rounded-xl px-5 md:text-sm   text-xs'>
+                <h1 className='  font-semibold  text-red-800 bg-red-200  w-fit  rounded-xl px-5 text-xs'>
 
 Out of Date
 </h1>
@@ -118,7 +118,7 @@ Out of Date
                     Phone
                 </td>
                 <td class="py-4 ">
-                <h1 className=' md:text-sm  text-xs font-semibold  text-[#B76E79] bg-yellow-100  w-fit rounded-xl px-5'>
+                <h1 className='   text-xs font-semibold  text-orange-600 bg-yellow-200  w-fit rounded-xl px-5'>
 
 In Progress
 </h1>
@@ -142,10 +142,11 @@ In Progress
                     Wearables
                 </td>
                 <td class="py-4 ">
-                <h1 className=' md:text-sm  text-xs font-semibold  text-blue-500 bg-blue-200  w-fit rounded-xl px-5'>
+                <h1 className=' text-xs font-semibold  text-blue-500 bg-blue-200  w-fit rounded-xl px-5'>
 
 Paid
 </h1>
+
                 </td>
                 <td class="py-4 px-6">
                     {/* <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"> */}

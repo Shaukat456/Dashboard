@@ -28,14 +28,16 @@ function App() {
   return (
     <>
     <div className="flex">
+      {/* <Navbar/> */}
       <Sidebar/>
-      <Navbar/>
-      <div class="grid grid-cols-3 gap-3 mx-5">
+      <div class="grid   grid-cols-3 gap-3 mx-5 ">
         <div class="col-span-2 ">
           <WelcomeBack />
         </div>
 
-        <Slider />
+<TopAuthors/>
+        {/* <Slider /> */}
+        {/* <Table/> */}
 
         <Cards />
         <Cards />
@@ -45,6 +47,7 @@ function App() {
           {/* <TopAuthors/> */}
         {/* </div> */}
           {/* <WelcomeBack /> */}
+
           <TopAuthors/>
 
 
@@ -52,6 +55,12 @@ function App() {
         <LineChartCard/>
 
         </div>
+
+
+        <div class="col-span-2 ">
+    <Table/>
+        </div>
+        <TopC/>
       </div>
       </div>
 
