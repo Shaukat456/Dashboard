@@ -4,7 +4,7 @@ const Slider = () => {
   return (
     <div>
       
-<div id="indicators-carousel" className="relative bg-gray-400 text-blue-500" data-carousel="static">
+<div id="indicators-carousel" className="relative max-h-80 bg-gray-400 text-blue-500" data-carousel="static">
     {/* <!-- Carousel wrapper --> */}
     <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
          {/* <!-- Item 1 --> */}
