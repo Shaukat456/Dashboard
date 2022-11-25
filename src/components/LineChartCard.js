@@ -3,7 +3,7 @@ import { LineChart } from './LineChart'
 
 export const LineChartCard = () => {
   return (
-    <div className='rounded-2xl flex flex-col  w-3/5 p-10 bg-gray-100   '>
+    <div className='rounded-2xl flex flex-col  lg:w-full  w-min p-10 bg-white  shadow-xl  '>
             <div className="flex mx-5  flex-col">
             <h1 className='font-bold font-CardH'>Area installed</h1>
 

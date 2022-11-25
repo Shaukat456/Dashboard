@@ -25,7 +25,7 @@ export const TopAuthors = () => {
   ];
   return (
     <>
-      <div className="rounded-2xl  lg:w-4/12   w-full   p-4 bg-gray-200 shadow-xl">
+      <div className="rounded-2xl  lg:w-full sm:h-fit h-fit  w-fit  p-4 shadow-xl">
         <h1 className="p-3 font-CardH text-2xl font-semibold">Top Authors</h1>
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (

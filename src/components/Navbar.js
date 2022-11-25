@@ -3,7 +3,7 @@ import React from 'react'
  const Navbar = () => {
   return (
     <>
-    <div className="text-gray-600 body-font backdrop-blur fixed w-full  ">
+    <div className="text-gray-600 body-font backdrop-blur fixed w-screen z-50">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
  <button>
 
@@ -16,18 +16,16 @@ import React from 'react'
    
  </button>
 
-    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-5">
+    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-5 items-center">
       <a className="ml-3 text-gray-500">
         {/* <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
           <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
         </svg> */}
         <figure>
-            <img src="https://minimals.cc/assets/icons/flags/ic_flag_en.svg" alt="" />
+            <img src="https://minimals.cc/assets/icons/flags/ic_flag_en.svg" alt="flag" />
         </figure>
       </a>
-        <figure >
-            <img  width={30} src={require("../avatar.png")} alt="" className='rounded-2xl'/>
-        </figure>
+        
       <a className="ml-3 text-gray-500">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -40,6 +38,12 @@ import React from 'react'
 </svg>
 
       </a>
+      <a href="">
+
+        <figure >
+            <img  width={30} src={require("../avatar.png")} alt="" className='rounded-2xl'/>
+        </figure>
+        </a>
     </span>
   </div>
 </div>

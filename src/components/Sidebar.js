@@ -93,7 +93,7 @@ export const Sidebar = () => {
                         {img}
                       </figure>
 
-                      <span className="flex-1 text-gray-400 mx-4 whitespace-nowrap font-CardH font-medium">
+                      <span className="flex-1 text-gray-500 mx-4 whitespace-nowrap font-CardH font-medium">
                         {name}
                       </span>
                       <span className="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-700 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300"></span>

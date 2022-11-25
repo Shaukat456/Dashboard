@@ -7,7 +7,7 @@ const WelcomeBack = () => {
       {/* <Navbar/> */}
       <section class="text-gray-600 body-font bg-[#ccf2e1] rounded-3xl shadow-xl   ">
   <div class="container mx-auto flex p-10 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2   lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left lg:flex  mb-16 md:mb-0 items-center text-center ">
+    <div class="lg:flex-grow flex flex-col md:items-start md:text-left lg:flex  mb-16 md:mb-0 items-center text-center ">
       <h1 class="title-font lg:text-3xl    sm:text-2xl  text-xl font-bold text-gray-600 font-CardH md:text-4xl">Welcome Back! 
         {/* <br class="hidden lg:inline-block"readymade gluten   /> */}
       </h1>
