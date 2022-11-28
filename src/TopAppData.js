@@ -4,7 +4,7 @@ const TopAppData=[
         Image :"https://minimals.cc/assets/icons/apps/ic_chrome.svg",
         rating : 'mac',
         year : "sdsd",
-        starRating: "",
+    
         // cast : "s"
 
     },
@@ -14,7 +14,7 @@ const TopAppData=[
         Image :"something",
         rating : 'mac',
         year : "sdsd",
-        starRating: "",
+      
         // cast : "s"
 
     },
@@ -24,7 +24,7 @@ const TopAppData=[
         Image :"something",
         rating : 'mac',
         year : "sdsd",
-        starRating: "",
+        
         // cast : "s"
 
     },

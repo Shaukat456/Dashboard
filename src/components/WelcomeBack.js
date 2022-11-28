@@ -8,7 +8,7 @@ const WelcomeBack = () => {
 
       {/* <Navbar/> */}
       {/* </div> */}
-      <section class="text-gray-600 body-font bg-[#ccf2e1] rounded-3xl shadow-xl  font-CardH ">
+      <section class="text-gray-600 body-font bg-[#ccf2e1] rounded-3xl shadow-lg  font-CardH ">
   <div class="container mx-auto flex p-10 md:flex-row flex-col items-center">
     <div class="lg:flex-grow flex flex-col md:items-start md:text-left lg:flex  mb-10 md:mb-0 items-center text-center ">
       <h1 class="title-font lg:text-2xl    sm:text-xl  text-lg font-bold text-gray-600 font-CardH md:text-4xl">Welcome Back! 

@@ -6,7 +6,6 @@ import Slider from "./components/Slider";
 import Navbar from "./components/Navbar";
 import Table from "./components/Table";
 import { Sidebar } from "./components/Sidebar";
-import Render from "./components/Render";
 import TopAppData from "./TopAppData";
 import { TopAuthors } from "./components/TopAuthors";
 import { LineChart } from "./components/LineChart";
@@ -71,24 +70,11 @@ function App() {
           <Card2/>
           <Card3/>
         </div>
-       <PieChart/>
-        {/* <TopC/> */}
+        <TopC/>
 
-    
       </div>
       </div>
 
-      {/* <LineChart/> */}
-      {/* </div>
-    {/* <Render movies={TopAppData}/> */}
-      {/* <Table/> */}
-      {/* </div> */}
-      {/* <Navbar/>
-  <WelcomeBack/> */}
-      {/* <Table/> */}
-      {/* <Render /> */}
-      {/* <Sidebar/> */}
-      {/* <Navbar/> */}
     </>
   );
 }
