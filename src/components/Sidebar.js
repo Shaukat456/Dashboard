@@ -16,9 +16,9 @@ export const Sidebar = () => {
     <div className="h-screen   sidebar " >
       <aside className="w-72  " aria-label="Sidebar">
 
-        <div className="overflow-y-scroll  h-screen fixed py-10  rounded dark:bg-gray-800">
+        <div className="overflow-y-scroll  h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800">
           <a
-            className="flex items-start w-4/6 mb-5"
+            className="flex  w-5/6 mb-5"
           >
             
             <img src={logo} className="lg:h-10 mb-4 md:h-6 sm:h-4 h-5 "  />

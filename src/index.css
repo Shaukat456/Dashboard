@@ -29,3 +29,7 @@ body{
 .sidebar{
     border-right: .4px solid rgb(132, 132, 132);
 }
+
+.bgo{
+    /* background: rgb(173, 173, 173) 0; */
+}

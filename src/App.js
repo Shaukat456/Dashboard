@@ -24,6 +24,7 @@ import {
 import PieChart from "./components/PieChart";
 import { Card } from "@material-tailwind/react";
 import { PieCard } from "./components/PieCard";
+import { TopApp } from "./components/TopApp";
 
 function App() {
   console.log(TopAppData);
@@ -36,7 +37,7 @@ function App() {
         <Navbar/>
 
     
-      <div class="grid   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
+      <div class="grid my-24   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
         
         <div class="md:col-span-2 col col-span-1 ">
@@ -70,15 +71,30 @@ function App() {
         <div class="col-span-2 my-2 ">
     <Table/>
         </div>
-        <div className="flex flex-col">
+       
+        <TopApp/>
+
+      <div className="col-span-1">
+
+        <TopC/>
+      </div>
+      <div className="col-span-1">
+
+      <TopAuthors/>
+      </div>
+      <div className="col-span-1">
+
+       <div className="flex flex-col">
           <Card2/>
           <Card3/>
         </div>
-        <TopC/>
       </div>
+      </div>
+     
       </div>
         {/* <Slider/> */}
         </div>
+
     </>
   );
 }
