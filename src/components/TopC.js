@@ -5,20 +5,20 @@ import Avatar from "../avatar.png";
  const TopC = () => {
   const Authors = [
     {
-      name: "Country",
+      name: "Germany",
       Likes: "15.3k",
 
       Award: <FaTrophy />,
       TrophyColor: "green",
     },
     {
-      name: "Country",
+      name: "Japan",
       Likes: "15.k",
       Award: <FaTrophy />,
       TrophyColor: "blue",
     },
     {
-      name: "Country",
+      name: "Srilanka",
       Likes: "15.k",
       Award: <FaTrophy />,
       TrophyColor: "blue",
@@ -43,12 +43,12 @@ import Avatar from "../avatar.png";
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (
             <>
-             <div className="grid  lg:grid-cols-4  p-2  space-x-5  ">
-              <div className="flex md:col-span-1 space-x-1  w-full items-center jstify-center ">
+             <div className="grid  lg:grid-cols-4  p-2  space-x-5 py-3  ">
+              <div className="flex md:col-span-1 space-x-2  w-full items-center jstify-center ">
                 {/* <figure> */}
                   <img className="" src="https://minimals.cc/assets/icons/flags/ic_flag_de.svg" alt="" />
                 {/* </figure> */}
-                <p className="">{name}</p>
+                <p className="font-CardH font-semibold">{name}</p>
               </div>
               
               <div className="flex  text-gray-500 space-x-2 items-center">

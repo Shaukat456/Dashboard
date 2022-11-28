@@ -23,6 +23,7 @@ import {
 } from "react-icons/fa";
 import PieChart from "./components/PieChart";
 import { Card } from "@material-tailwind/react";
+import { PieCard } from "./components/PieCard";
 
 function App() {
   console.log(TopAppData);
@@ -31,9 +32,12 @@ function App() {
     <div className="flex">
       {/* <Navbar/> */}
       <Sidebar/>
+        <div className="flex flex-col">
+        <Navbar/>
+
+    
       <div class="grid   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
-        {/* <Navbar/> */}
         
         <div class="md:col-span-2 col col-span-1 ">
           <WelcomeBack />
@@ -54,7 +58,7 @@ function App() {
           {/* <WelcomeBack /> */}
 
           {/* <TopAuthors/> */}
-          <PieChart/>
+          <PieCard/>
 
 
         <div className="col-span-2">
@@ -71,10 +75,10 @@ function App() {
           <Card3/>
         </div>
         <TopC/>
-
       </div>
       </div>
-
+        {/* <Slider/> */}
+        </div>
     </>
   );
 }

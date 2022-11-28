@@ -4,7 +4,7 @@ import React from 'react'
 
   return (
     <>
-    <div className="text-gray-600 body-font backdrop-blur fixed w-5/6 z-50 ">
+    <div className="text-gray-600 body-font backdrop-blur fixed w-5/6 z-50 bg-blend-lighten hover:bg-blend-darken ">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
  <button>
 

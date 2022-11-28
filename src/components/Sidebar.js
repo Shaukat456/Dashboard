@@ -13,10 +13,10 @@ export const Sidebar = () => {
   // console.log(typeof GeneralArr)
 
   return (
-    <div className="h-screen " >
-      <aside className="w-72 " aria-label="Sidebar">
+    <div className="h-screen   sidebar " >
+      <aside className="w-72  " aria-label="Sidebar">
 
-        <div className="overflow-y-scroll  h-screen py-10  rounded dark:bg-gray-800">
+        <div className="overflow-y-scroll  h-screen fixed py-10  rounded dark:bg-gray-800">
           <a
             className="flex items-start w-4/6 mb-5"
           >
