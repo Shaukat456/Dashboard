@@ -6,7 +6,6 @@ import Slider from "./components/Slider";
 import Navbar from "./components/Navbar";
 import Table from "./components/Table";
 import { Sidebar } from "./components/Sidebar";
-import Render from "./components/Render";
 import TopAppData from "./TopAppData";
 import { TopAuthors } from "./components/TopAuthors";
 import { LineChart } from "./components/LineChart";
@@ -22,6 +21,10 @@ import {
   FaApple,
   FaSignal,
 } from "react-icons/fa";
+import PieChart from "./components/PieChart";
+import { Card } from "@material-tailwind/react";
+import { PieCard } from "./components/PieCard";
+import { TopApp } from "./components/TopApp";
 
 function App() {
   console.log(TopAppData);
@@ -30,11 +33,14 @@ function App() {
     <div className="flex">
       {/* <Navbar/> */}
       <Sidebar/>
-      <div class="grid   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
-        
+        <div className="flex flex-col">
         <Navbar/>
+
+    
+      <div class="grid my-24   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
-        <div class="md:col-span-2 colcol-span-1 ">
+        
+        <div class="md:col-span-2 col col-span-1 ">
           <WelcomeBack />
         </div>
 
@@ -42,16 +48,18 @@ function App() {
         {/* <Slider /> */}
         {/* <Table/> */}
 
-        <Cards />
-        <Cards />
-        <Cards />
+
+        <Cards  color={'green'}/>
+        <Cards  color="blue"/>
+        <Cards  color="orange"/>
 
         {/* <div className=""> */}
           {/* <TopAuthors/> */}
         {/* </div> */}
           {/* <WelcomeBack /> */}
 
-          <TopAuthors/>
+          {/* <TopAuthors/> */}
+          <PieCard/>
 
 
         <div className="col-span-2">
@@ -63,27 +71,30 @@ function App() {
         <div class="col-span-2 my-2 ">
     <Table/>
         </div>
-        <div className="flex flex-col">
+       
+        <TopApp/>
+
+      <div className="col-span-1">
+
+        <TopC/>
+      </div>
+      <div className="col-span-1">
+
+      <TopAuthors/>
+      </div>
+      <div className="col-span-1">
+
+       <div className="flex flex-col">
           <Card2/>
           <Card3/>
         </div>
-        {/* <TopC/> */}
-
-    
       </div>
       </div>
+     
+      </div>
+        {/* <Slider/> */}
+        </div>
 
-      {/* <LineChart/> */}
-      {/* </div>
-    {/* <Render movies={TopAppData}/> */}
-      {/* <Table/> */}
-      {/* </div> */}
-      {/* <Navbar/>
-  <WelcomeBack/> */}
-      {/* <Table/> */}
-      {/* <Render /> */}
-      {/* <Sidebar/> */}
-      {/* <Navbar/> */}
     </>
   );
 }

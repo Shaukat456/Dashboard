@@ -5,11 +5,23 @@ import Avatar from "../avatar.png";
  const TopC = () => {
   const Authors = [
     {
-      name: "Country",
+      name: "Germany",
       Likes: "15.3k",
 
       Award: <FaTrophy />,
       TrophyColor: "green",
+    },
+    {
+      name: "Japan",
+      Likes: "15.k",
+      Award: <FaTrophy />,
+      TrophyColor: "blue",
+    },
+    {
+      name: "Srilanka",
+      Likes: "15.k",
+      Award: <FaTrophy />,
+      TrophyColor: "blue",
     },
     {
       name: "Country",
@@ -26,66 +38,35 @@ import Avatar from "../avatar.png";
   ];
   return (
     <>
-      <div className="rounded-2xl   w-full   p-4  shadow-xl">
-        <h1 className="p-3 font-CardH text-2xl font-semibold">Top Installed Countries</h1>
+      <div className="rounded-2xl text-gray-700    w-[550px]   p-4 pr-5   shadow-lg">
+        <h1 className="p-2 font-CardH text-xl font-semibold">Top Installed Countries</h1>
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (
             <>
-              <div
-                className="flex justify-between space-y-4 px-3  font-CardH text-base "
-                key={index}
-              >
-                <div className="grid grid-cols-4">
-                    
-                  <figure className="flex items-center  ">
-                    <img
-                      className="w-9 items-center rounded-2xl  "
-                      src="https://minimals.cc/assets/icons/flags/ic_flag_en.svg"
-                      alt=""
-                    />
-                  </figure>
-                  
-                  <div className="flex  p-3  ">
-                    <h1> {} </h1>
-
-                    <div className="flex   py-1 items-center lg:text-sm">
-                      <FaHeart className="" />
-                      
-
-                      <p>{Likes}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex  p-3 ">
-                    <h1> {} </h1>
-
-                    <div className="flex  py-1 items-center lg:text-sm">
-                      <FaHeart className="" />
-
-                      <p>{Likes}</p>
-                    </div>
-                  </div>
-
-
-                  <div className="flex  p-3 ">
-                    <h1> {} </h1>
-
-                    <div className="flex  py-1 items-center lg:text-sm">
-                      <FaHeart className="" />
-
-                      <p>{Likes}</p>
-                    </div>
-                  </div>
-
-
-                </div>
-
-                <div
-                  className={`rounded-3xl   items-center flex   bg-green-100`}
-                >
-                 
-                </div>
+             <div className="grid  lg:grid-cols-4  p-2  space-x-5 py-3  ">
+              <div className="flex md:col-span-1 space-x-2  w-full items-center jstify-center ">
+                {/* <figure> */}
+                  <img className="" src="https://minimals.cc/assets/icons/flags/ic_flag_de.svg" alt="" />
+                {/* </figure> */}
+                <p className="font-CardH font-semibold">{name}</p>
               </div>
+              
+              <div className="flex  text-gray-500 space-x-2 items-center">
+                  <FaAndroid className=""/>
+                   <p> 42.6K</p>
+              </div>
+              
+              <div className="flex text-gray-500 space-x-2 items-center">
+                  <FaWindows/>
+                   <p>2.33k </p>
+              </div>
+              
+              <div className="flex text-gray-500 space-x-2 items-center">
+                  <FaApple/>
+                  <p>34.2k</p>
+              </div>
+              
+                           </div>
             </>
           );
         })}

@@ -44,6 +44,30 @@ const Sidebar_menu = [
         name: "File",
         img: <FaShoppingBag/>,
       },
+      {
+        name: "Anaylatics",
+        img: <FaChartLine/>,
+      },
+      {
+        name: "Booking ",
+        img: <FaShoppingBag/>,
+      },
+      {
+        name: "File",
+        img: <FaShoppingBag/>,
+      },
+      {
+        name: "Anaylatics",
+        img: <FaChartLine/>,
+      },
+      {
+        name: "Booking ",
+        img: <FaShoppingBag/>,
+      },
+      {
+        name: "File",
+        img: <FaShoppingBag/>,
+      },
     ],
     Management: [
       {
