@@ -23,9 +23,9 @@ const WelcomeBack = () => {
         
       </div>
     </div>
-    <div class="z-0  lg:w-fit md:w-1/2 w-5/6 flex -space-x-8 ">
+    <div class="z-0  lg:w-6/6 md:w-1/2 w-5/6 flex -space-x-8 justify-end ">
         <figure>
-          <img src={require("../image.png")} alt="" />
+          <img src={require("../image.png")} alt=""  className=' lg:w-10/12 mx-16'/>
         </figure>
         
       {/* <img className="z-50 object-cover object-center rounded w-1/12 " alt="hero" src="https://minimals.cc/assets/illustrations/characters/character_3.png" style={{zIndex:'50'}} /> */}
