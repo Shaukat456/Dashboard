@@ -22,6 +22,8 @@ import {
   FaApple,
   FaSignal,
 } from "react-icons/fa";
+import PieChart from "./components/PieChart";
+import { Card } from "@material-tailwind/react";
 
 function App() {
   console.log(TopAppData);
@@ -32,9 +34,9 @@ function App() {
       <Sidebar/>
       <div class="grid   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
-        <Navbar/>
+        {/* <Navbar/> */}
         
-        <div class="md:col-span-2 colcol-span-1 ">
+        <div class="md:col-span-2 col col-span-1 ">
           <WelcomeBack />
         </div>
 
@@ -42,16 +44,18 @@ function App() {
         {/* <Slider /> */}
         {/* <Table/> */}
 
-        <Cards />
-        <Cards />
-        <Cards />
+
+        <Cards  color={'green'}/>
+        <Cards  color="blue"/>
+        <Cards  color="orange"/>
 
         {/* <div className=""> */}
           {/* <TopAuthors/> */}
         {/* </div> */}
           {/* <WelcomeBack /> */}
 
-          <TopAuthors/>
+          {/* <TopAuthors/> */}
+          <PieChart/>
 
 
         <div className="col-span-2">
@@ -67,6 +71,7 @@ function App() {
           <Card2/>
           <Card3/>
         </div>
+       <PieChart/>
         {/* <TopC/> */}
 
     

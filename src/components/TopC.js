@@ -26,7 +26,7 @@ import Avatar from "../avatar.png";
   ];
   return (
     <>
-      <div className="rounded-2xl   w-full   p-4  shadow-xl">
+      <div className="rounded-2xl   w-full   p-4   shadow-xl">
         <h1 className="p-3 font-CardH text-2xl font-semibold">Top Installed Countries</h1>
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (
