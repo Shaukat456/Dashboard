@@ -37,7 +37,7 @@ function App() {
         <Navbar/>
 
     
-      <div class="grid my-24   lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
+      <div class="grid my-24  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
         
         <div class="md:col-span-2 col col-span-1 ">
@@ -74,9 +74,9 @@ function App() {
        
         <TopApp/>
 
-      <div className="col-span-1">
+      <div className="col-span-1 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
 
-        <TopC/>
+        <TopC  />
       </div>
       <div className="col-span-1">
 

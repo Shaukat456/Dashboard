@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import Sidebar_menu from "../SidebarData";
 import { FaEllipsisV } from "react-icons/fa";
 import Avatar from "../avatar.png";
 import logo from '../spotfy.png'
 export const Sidebar = () => {
+  const reference =useRef(null)
+  
   var GeneralArr, Management;
   Sidebar_menu.forEach((e) => {
     const { General, Management } = e;
@@ -13,12 +15,12 @@ export const Sidebar = () => {
   // console.log(typeof GeneralArr)
 
   return (
-    <div className="h-screen   sidebar " >
+    <div className="h-screen    " >
       <aside className="w-72  " aria-label="Sidebar">
-
-        <div className="overflow-y-scroll  h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800">
+        <div className="   transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
           <a
             className="flex  w-5/6 mb-5"
+            
           >
             
             <img src={logo} className="lg:h-10 mb-4 md:h-6 sm:h-4 h-5 "  />
