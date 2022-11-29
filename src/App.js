@@ -95,9 +95,9 @@ function App() {
 
       <TopAuthors/>
       </div>
-      <div className="col-span-1">
+      <div className="lg:col-span-1 col-span-3">
 
-       <div className="flex flex-col">
+       <div className="flex flex-col  ">
           <Card2/>
           <Card3/>
 

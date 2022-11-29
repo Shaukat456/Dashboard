@@ -17,7 +17,7 @@ export const Sidebar = () => {
   // console.log(typeof GeneralArr)
 
   return (
-    <div className="lg:h-screen lg:flex sm:hidden   " >
+    <div className="lg:h-screen lg:flex hidden   " >
       <aside className="w-72  " aria-label="Sidebar">
         <div className="   transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
          
