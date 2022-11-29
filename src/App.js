@@ -30,7 +30,7 @@ function App() {
   console.log(TopAppData);
   return (
     <>
-    <div className="flex">
+    <div className="flex ">
       {/* <Navbar/> */}
       <Sidebar/>
         <div className="flex flex-col">
@@ -40,18 +40,28 @@ function App() {
       <div class="grid my-24  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
         
-        <div class="md:col-span-2 col col-span-1 ">
+        <div class="md:col-span-2 col col-span-3 ">
           <WelcomeBack />
         </div>
+<div className="md:col-span-1  col-span-3">
 
 <TopAuthors/>
+</div>
         {/* <Slider /> */}
         {/* <Table/> */}
 
+        <div className="md:col-span-1  col-span-3">
 
         <Cards  color={'green'}/>
+        </div>
+        <div className="md:col-span-1  col-span-3">
         <Cards  color="blue"/>
+
+        </div>
+        <div className="md:col-span-1   col-span-3">
+
         <Cards  color="orange"/>
+        </div>
 
         {/* <div className=""> */}
           {/* <TopAuthors/> */}
@@ -59,34 +69,38 @@ function App() {
           {/* <WelcomeBack /> */}
 
           {/* <TopAuthors/> */}
+          <div className="lg:col-span-1 col-span-3 place-items-center">
+
           <PieCard/>
+          </div>
 
 
-        <div className="col-span-2">
+        <div className="lg:col-span-2 col-span-3">
         <LineChartCard/>
 
         </div>
 
 
-        <div class="col-span-2 my-2 ">
+        <div class="lg:col-span-2 col-span-3 my-2 ">
     <Table/>
         </div>
        
         <TopApp/>
 
-      <div className="col-span-1 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
+      <div className="lg:col-span-1  col-span-3 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
 
         <TopC  />
       </div>
-      <div className="col-span-1">
+      <div className="lg:col-span-1 col-span-3 place-items-center">
 
       <TopAuthors/>
       </div>
-      <div className="col-span-1">
+      <div className="lg:col-span-1 col-span-3">
 
-       <div className="flex flex-col">
+       <div className="flex flex-col  ">
           <Card2/>
           <Card3/>
+
         </div>
       </div>
       </div>
