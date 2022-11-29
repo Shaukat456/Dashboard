@@ -27,3 +27,8 @@ body{
 .bgo{
     /* background: rgb(173, 173, 173) 0; */
 }
+.activeClass{
+        color: rgb(0, 171, 85);
+        /* background-color: rgb(91, 122, 91); */
+    /* margin: 50px; */
+}

@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef , useState } from "react";
 import Sidebar_menu from "../SidebarData";
 import { FaEllipsisV } from "react-icons/fa";
 import Avatar from "../avatar.png";
 import logo from '../spotfy.png'
 export const Sidebar = () => {
+  const [active, setActive] = useState(null);
+
   const reference =useRef(null)
   
   var GeneralArr, Management;
-  Sidebar_menu.forEach((e) => {
+  Sidebar_menu.forEach((e , index) => {
     const { General, Management } = e;
     GeneralArr = General;
   });
@@ -15,13 +17,29 @@ export const Sidebar = () => {
   // console.log(typeof GeneralArr)
 
   return (
-    <div className="h-screen    " >
+    <div className="lg:h-screen lg:flex sm:hidden   " >
       <aside className="w-72  " aria-label="Sidebar">
         <div className="   transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
-          <a
+         
+          {/* <a
             className="flex  w-5/6 mb-5"
+            onClick={() => {
+              this.classList.add=''
+            }}
+                
             
-          >
+          > */}
+
+             <a 
+        // href}`} 
+        className={ `flex  w-5/6 mb-5 nav-link  `}
+        onClick={(e)=>{
+            console.log("E" , e)
+            // e.currentTarget.classList.toggle("m-3")
+            // e.currentTarget.classList.add("mx-5")
+        }}
+        // onClick={() => setActive(link)}
+      >
             
             <img src={logo} className="lg:h-10 mb-4 md:h-6 sm:h-4 h-5 "  />
             {/* <svg
@@ -38,7 +56,10 @@ export const Sidebar = () => {
                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
               />
             </svg> */}
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+            
+              {/* s')} */}
+
+            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white"> </span>
           </a>
 
           {/* User Card */}
@@ -86,8 +107,20 @@ export const Sidebar = () => {
                   <li>
                     <a
                       href="#"
-                      className="flex items-center p-2 text-base font-normal text-[#637381] text-ellipsis rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    
+                      className={`   flex items-center  p-2 text-base font-normal text-[#637381] text-ellipsis rounded-lg dark:text-white hoverg-gray-100 hover:text-green-900 dark:hover:bg-gray-700`}
+                      onMouseOver={(elmt)=>{
+                        // elmt.currentTarget.classList.remove("text-[#637381]")
+                        // elmt.currentTarget.classList.add("   elmt.currentTarget.classList.remove("text-[#637381]")
+                        // elmt.currentTarget.classList.add("activeClass")
+                      }}
+                      onMouseLeave={(elmt)=>{
+                        // elmt.currentTarget.classList.remove("activeClass")
+                        
+                    
+                      }}
                     >
+                      
                       {/* 
              <svg aria-hidden="true" className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg> */}
                       <figure className="flex-shrink-0 p-3    text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900  font-CardH">
