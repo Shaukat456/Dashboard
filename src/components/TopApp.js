@@ -3,7 +3,7 @@ import { FaApple, FaMaxcdn } from "react-icons/fa";
 
 export const TopApp = () => {
   return (
-    <div className=" rounded-xl shadow-lg  flex flex-col">
+    <div className=" rounded-xl shadow-lg  flex flex-col md:w-auto w-screen  ">
           <h1 className="p-5 font-CardH text-xl font-semibold">Top Related Apps</h1>
       <div className="  flex justify-between bg-white-200  items-center px-5 py-2 rounded-xl">
         

@@ -43,7 +43,7 @@ function App() {
         <div class="md:col-span-2 col col-span-3 ">
           <WelcomeBack />
         </div>
-<div className="md:col-span-1  col-span-3">
+<div className="md:col-span-1  col-span-3 w-full">
 
 <TopAuthors/>
 </div>
