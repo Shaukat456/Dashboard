@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 const Navbar = ({}) => {
   const reference = useRef(null);
@@ -12,14 +12,17 @@ const Navbar = ({}) => {
   };
 
   const sidebar= useRef(null)
-
+useEffect(()=>{
+  localStorage.setItem("sidebar_State", "hidden")    
+                
+},[])
 
 
   return (
     <>
       <div
         ref={reference}
-        className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-4/6   sm:w-screen w-screen z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver "
+        className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-screen   sm:w-[105vw] w-[111vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver "
       >
         <div className="md:container px-5 py-8 mx-auto flex items-center sm:flex-row animSide  sm:justify-between  justify-between ">
           {/* hamburger menu icon */}
@@ -28,6 +31,21 @@ const Navbar = ({}) => {
           <label className=" btn-circle swap swap-rotate lg:hidden md:flex">
               <input type="checkbox"  onClick={()=>{
                 
+                 
+                const sidebar_state=   localStorage.getItem("sidebar_State");
+                  console.log(sidebar_state) 
+                if (sidebar_state=="flex"){
+                    localStorage.setItem("sidebar_State", "hidden")     
+                  }
+                  if (sidebar_state=="hidden")
+                  {
+                    localStorage.setItem("sidebar_State", "flex")     
+                  }
+
+
+
+
+
                 }}/>
 
               <svg

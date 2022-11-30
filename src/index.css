@@ -48,3 +48,9 @@ body{
     border-right: 2px dotted rgb(220, 220, 220) ;
 }
 
+
+@media (min-width: 640px) and (max-width:810px) {
+    .NavOver{
+        width: 130vw;
+    }
+}
