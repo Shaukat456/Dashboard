@@ -38,7 +38,7 @@ import Avatar from "../avatar.png";
   ];
   return (
     <>
-      <div className=" rounded-2xl text-gray-700    lg:w-[550px] w-screen   p-4 pr-5   shadow-lg hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded     ">
+      <div className=" rounded-2xl text-gray-700    lg:w-[550px] w-screen   p-4 pr-5     overflow-x-hidden   scrollbar-thin  scrollbar-rounded     ">
         <h1 className="p-2 pb-5 font-CardH text-xl font-semibold">Top Installed Countries</h1>
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (

@@ -66,7 +66,7 @@ function App() {
 
             <TopApp />
 
-            <div className="lg:col-span-1  col-span-3 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
+            <div className="lg:col-span-1  col-span-3 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded shadow-lg rounded-xl ">
               <TopC />
             </div>
             <div className="lg:col-span-1 col-span-3 place-items-center">
