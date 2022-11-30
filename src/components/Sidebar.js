@@ -19,7 +19,7 @@ export const Sidebar = () => {
   return (
     <div className="lg:h-screen lg:flex hidden   " >
       <aside className="w-72  " aria-label="Sidebar">
-        <div className="   transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
+        <div className=" sideborder  transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
          
           {/* <a
             className="flex  w-5/6 mb-5"
@@ -108,7 +108,7 @@ export const Sidebar = () => {
                     <a
                       href="#"
                     
-                      className={`   flex items-center  p-2 text-base font-normal text-[#637381] text-ellipsis rounded-lg dark:text-white hoverg-gray-100 hover:text-green-900 dark:hover:bg-gray-700`}
+                      className={`   flex items-center  p-2 text-base font-normal text-[#637389] text-ellipsis rounded-lg dark:text-white hoverg-gray-100 hover:text-green-900 dark:hover:bg-gray-700`}
                       onMouseOver={(elmt)=>{
                         // elmt.currentTarget.classList.remove("text-[#637381]")
                         // elmt.currentTarget.classList.add("   elmt.currentTarget.classList.remove("text-[#637381]")
@@ -123,7 +123,7 @@ export const Sidebar = () => {
                       
                       {/* 
              <svg aria-hidden="true" className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg> */}
-                      <figure className="flex-shrink-0 p-3    text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900  font-CardH">
+                      <figure className="flex-shrink-0 px-3 py-2    text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900  font-CardH">
                         <img src={img} alt="" />
                         {img}
                       </figure>

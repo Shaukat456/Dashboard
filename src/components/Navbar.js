@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const Navbar = () => {
+
+  const reference= useRef(null);
+  // console.log(reference.current);
+
+  // var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (90 > currentScrollPos) {
+      reference.current.classList.add("py-4")
+      // reference.current.classList.add("bg-gray-600")
+      // reference.current.classList.add("bg-gray-200")
+  } else {
+    reference.current.classList.remove("py-4")
+    // reference.current.classList.remove("bg-gray-200")
+
+  }
+  // prevScrollpos = currentScrollPos;
+}
+
   return (
     <>
-      <div className=" text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-4/6   sm:w-screen w-screen z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent ">
-        <div className="md:container px-5 py-8 mx-auto flex items-center sm:flex-row ">
+      <div ref={reference}  className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-4/6   sm:w-screen w-screen z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver ">
+        <div className="md:container px-5 py-8 mx-auto flex items-center sm:flex-row animSide  sm:justify-between  justify-between">
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"

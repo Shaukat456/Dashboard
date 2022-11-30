@@ -33,11 +33,11 @@ function App() {
     <div className="flex ">
       {/* <Navbar/> */}
       <Sidebar/>
-        <div className="flex flex-col">
+        <div className="flex flex-col mx-3">
         <Navbar/>
 
     
-      <div class="grid my-24  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
+      <div class="grid my-32  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
         
         
         <div class="md:col-span-2 col col-span-3 ">

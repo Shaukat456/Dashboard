@@ -43,8 +43,8 @@ import Avatar from "../avatar.png";
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (
             <>
-             <div className="grid  lg:grid-cols-4  sm:grid-col-4   p-2  space-x-3 py-2  md:text-base text-sm ">
-              <div className="flex md:col-span-1 col-span-3 space-x-2  w-full items-center jstify-center ">
+             <div className="grid  lg:grid-cols-4 sm:grid-col-5    p-2  space-x-3 py-2  md:text-base text-sm ">
+              <div className="flex md:col-span-1 col-span-4 space-x-2  w-full items-center jstify-center ">
                 {/* <figure> */}
                   <img className="" src="https://minimals.cc/assets/icons/flags/ic_flag_de.svg" alt="" />
                 {/* </figure> */}
