@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Sidebar_menu from "../SidebarData";
 import { FaEllipsisV } from "react-icons/fa";
 import Avatar from "../avatar.png";
@@ -17,11 +17,14 @@ export const Sidebar = ({ setNav }) => {
     GeneralArr = General;
   });
 
+  const sidebar_state = localStorage.getItem("sidebar_State");
+  console.log(sidebar_state);
+
   return (
-    <div className={`lg:h-screen lg:flex hidden   `}>
+    <div className={`lg:h-screen lg:flex  ${sidebar_state} hidden   `}>
       <aside className="w-72  " aria-label="Sidebar">
         <div className=" sideborder  transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
-          <a className={`flex  w-5/6 mb-5 nav-link  `}>
+          <a className={`container flex  w-5/6 mb-5 nav-link  `}>
             <img src={logo} className="lg:h-10 mb-4 md:h-6 sm:h-4 h-5 " />
 
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
