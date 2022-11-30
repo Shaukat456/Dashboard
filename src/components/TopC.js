@@ -45,9 +45,7 @@ import Avatar from "../avatar.png";
             <>
              <div className="grid  lg:grid-cols-4 sm:grid-col-5    p-2  space-x-3 py-2  md:text-base text-sm ">
               <div className="flex md:col-span-1 col-span-4 space-x-2  w-full items-center jstify-center ">
-                {/* <figure> */}
                   <img className="" src="https://minimals.cc/assets/icons/flags/ic_flag_de.svg" alt="" />
-                {/* </figure> */}
                 <p className="font-CardH font-semibold">{name}</p>
               </div>
               
