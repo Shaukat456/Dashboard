@@ -38,16 +38,14 @@ import Avatar from "../avatar.png";
   ];
   return (
     <>
-      <div className=" rounded-2xl text-gray-700    lg:w-[550px] w-screen   p-4 pr-5   shadow-lg hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded     ">
+      <div className=" rounded-2xl text-gray-700    lg:w-[550px] w-screen   p-4 pr-5     overflow-x-hidden   scrollbar-thin  scrollbar-rounded     ">
         <h1 className="p-2 pb-5 font-CardH text-xl font-semibold">Top Installed Countries</h1>
         {Authors.map(({ name, Likes, TrophyColor }, index) => {
           return (
             <>
-             <div className="grid  lg:grid-cols-4  sm:grid-col-4   p-2  space-x-3 py-2  md:text-base text-sm ">
-              <div className="flex md:col-span-1 col-span-3 space-x-2  w-full items-center jstify-center ">
-                {/* <figure> */}
+             <div className="grid  lg:grid-cols-4 sm:grid-cols-7 grid-cols-8  grid-cols-none  p-2  space-x-3 py-2  md:text-base text-sm ">
+              <div className="flex md:col-span-1 col-span-4 space-x-2  w-full items-center  ">
                   <img className="" src="https://minimals.cc/assets/icons/flags/ic_flag_de.svg" alt="" />
-                {/* </figure> */}
                 <p className="font-CardH font-semibold">{name}</p>
               </div>
               

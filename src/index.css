@@ -7,7 +7,8 @@
 
 body{
     /* background-color: black; */
-    
+    transition: all ease .5s;
+
 }
 
 
@@ -32,3 +33,18 @@ body{
         /* background-color: rgb(91, 122, 91); */
     /* margin: 50px; */
 }
+
+.animSide{
+    transition: all ease .5s;
+}
+.NavOver{
+    
+    background-color:	rgb(255,255,255,.5);
+    /* background-color:		rgb(240,255,240 , .5); */
+    
+}
+
+.sideborder{
+    border-right: 2px dotted rgb(220, 220, 220) ;
+}
+

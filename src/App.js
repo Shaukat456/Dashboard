@@ -27,88 +27,61 @@ import { PieCard } from "./components/PieCard";
 import { TopApp } from "./components/TopApp";
 
 function App() {
-  console.log(TopAppData);
   return (
     <>
-    <div className="flex ">
-      {/* <Navbar/> */}
-      <Sidebar/>
-        <div className="flex flex-col">
-        <Navbar/>
+      <div className="flex ">
+        <Sidebar />
+        <div className="flex flex-col mx-3">
+          <Navbar />
 
-    
-      <div class="grid my-24  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
-        
-        
-        <div class="md:col-span-2 col col-span-3 ">
-          <WelcomeBack />
-        </div>
-<div className="md:col-span-1  col-span-3 w-full">
+          <div class="grid my-32  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
+            <div class="md:col-span-2 col col-span-3 ">
+              <WelcomeBack />
+            </div>
+            <div className="md:col-span-1  col-span-3 w-full">
+              <TopAuthors />
+            </div>
+            <div className="md:col-span-1  col-span-3">
+              <Cards color={"green"} />
+            </div>
+            <div className="md:col-span-1  col-span-3">
+              <Cards color="blue" />
+            </div>
+            <div className="md:col-span-1   col-span-3">
+              <Cards color="orange" />
+            </div>
 
-<TopAuthors/>
-</div>
-        {/* <Slider /> */}
-        {/* <Table/> */}
+            {/* <TopAuthors/> */}
+            <div className="lg:col-span-1 col-span-3 place-items-center">
+              <PieCard />
+            </div>
 
-        <div className="md:col-span-1  col-span-3">
+            <div className="lg:col-span-2 col-span-3">
+              <LineChartCard />
+            </div>
 
-        <Cards  color={'green'}/>
-        </div>
-        <div className="md:col-span-1  col-span-3">
-        <Cards  color="blue"/>
+            <div class="lg:col-span-2 col-span-3 my-2 ">
+              <Table />
+            </div>
 
-        </div>
-        <div className="md:col-span-1   col-span-3">
+            <TopApp />
 
-        <Cards  color="orange"/>
-        </div>
-
-        {/* <div className=""> */}
-          {/* <TopAuthors/> */}
-        {/* </div> */}
-          {/* <WelcomeBack /> */}
-
-          {/* <TopAuthors/> */}
-          <div className="lg:col-span-1 col-span-3 place-items-center">
-
-          <PieCard/>
+            <div className="lg:col-span-1  col-span-3 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded shadow-lg rounded-xl ">
+              <TopC />
+            </div>
+            <div className="lg:col-span-1 col-span-3 place-items-center">
+              <TopAuthors />
+            </div>
+            <div className="lg:col-span-1 col-span-3">
+              <div className="flex flex-col  ">
+                <Card2 />
+                <Card3 />
+              </div>
+            </div>
           </div>
-
-
-        <div className="lg:col-span-2 col-span-3">
-        <LineChartCard/>
-
         </div>
-
-
-        <div class="lg:col-span-2 col-span-3 my-2 ">
-    <Table/>
-        </div>
-       
-        <TopApp/>
-
-      <div className="lg:col-span-1  col-span-3 hover:overflow-x-scroll overflow-x-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
-
-        <TopC  />
-      </div>
-      <div className="lg:col-span-1 col-span-3 place-items-center">
-
-      <TopAuthors/>
-      </div>
-      <div className="lg:col-span-1 col-span-3">
-
-       <div className="flex flex-col  ">
-          <Card2/>
-          <Card3/>
-
-        </div>
-      </div>
-      </div>
-     
-      </div>
         {/* <Slider/> */}
-        </div>
-
+      </div>
     </>
   );
 }
