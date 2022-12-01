@@ -4,7 +4,7 @@ const Slider = () => {
   return (
     <div>
       
-      <div className="carousel w-auto h-full bg-yellow-400 blur-sm bg-opacity-5 bg-blend-soft-light ">
+      <div className="carousel w-auto h-full bg-yellow-400 blur-sm bg-opacity-5  ">
   <div id="item1" className="carousel-item w-full">
     <img src="https://placeimg.com/800/200/arch" className="w-full" />
   </div> 
