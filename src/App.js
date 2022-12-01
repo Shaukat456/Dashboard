@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+
 import Cards from "./components/Cards";
 import WelcomeBack from "./components/WelcomeBack";
 import Slider from "./components/Slider";
@@ -25,16 +26,27 @@ import PieChart from "./components/PieChart";
 import { Card } from "@material-tailwind/react";
 import { PieCard } from "./components/PieCard";
 import { TopApp } from "./components/TopApp";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [sidebarState, setSidebarState] = useState(true);
+
+  useEffect(() => {
+    setSidebarState(true)
+  }, []);
+
+  function SidebarToggle() {
+    setSidebarState((prevState) => !prevState);
+  }
   return (
     <>
       <div className="flex ">
-        <Sidebar />
-        <div className="flex flex-col mx-3">
-          <Navbar />
+        {sidebarState && <Sidebar  />}
 
-          <div class="grid my-32  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
+        <div className="flex flex-col mx-3">
+          <Navbar Sidebar={SidebarToggle} />
+
+          <div class="grid my-32  lg:grid-cols-3 gap-3 mx-5 sm:grid-cols-1 grid-cols-none ">
             <div class="md:col-span-2 col col-span-3 ">
               <WelcomeBack />
             </div>
