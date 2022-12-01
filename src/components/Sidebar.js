@@ -10,7 +10,6 @@ export const Sidebar = ({ SIDEBAR }) => {
   const reference = useRef(null);
 
   var GeneralArr, Management;
-  
   Sidebar_menu.forEach((e, index) => {
     const { General, Management } = e;
     GeneralArr = General;
@@ -18,9 +17,9 @@ export const Sidebar = ({ SIDEBAR }) => {
 
   return (
     <>
-      <div className={`lg:h-screen lg:flex lg:w-fit   `}>
+      <div className={`sm:h-fit   lg:flex lg:w-fit   `}>
         <aside className="w-72  " aria-label="Sidebar">
-          <div className=" sideborder  transition ease-in-out delay-1000    h-screen fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
+          <div className=" sideborder  transition ease-in-out delay-1000    h-full fixed w-72 px-3 py-10  rounded dark:bg-gray-800    duration-700 hover:overflow-y-scroll overflow-y-hidden  scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin  scrollbar-rounded ">
             <a className={`container flex  w-5/6 mb-5 nav-link  `}>
               <img src={logo} className="lg:h-10 mb-4 md:h-6 sm:h-4 h-5 " />
 

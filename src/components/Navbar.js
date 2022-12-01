@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Navbar = ({Sidebar}) => {
+const Navbar = ({ Sidebar }) => {
   const reference = useRef(null);
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -11,29 +11,24 @@ const Navbar = ({Sidebar}) => {
     }
   };
 
-
   // const sidebar= useRef(null)
-// useEffect(()=>{
-//   // localStorage.setItem("sidebar_State", "hidden")    
-                
-// },[])
+  // useEffect(()=>{
+  //   // localStorage.setItem("sidebar_State", "hidden")
 
+  // },[])
 
   return (
     <>
-      <div
+      <div ref={reference} className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-screen   sm:w-[102vw] w-[200vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver ">
+        <div  className=" px-5 py-8 mx-auto flex items-center sm:flex-row animSide   justify-start sm:container overflow-hidden     ">
         
-        className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-screen   sm:w-[105vw] w-[111vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver "
-      >
-        <div className="md:container px-5 py-8 mx-auto flex items-center sm:flex-row animSide  sm:justify-between  justify-between ">
           {/* hamburger menu icon */}
-       <div>
-     
-          <label className=" btn-circle swap swap-rotate  md:flex">
-              <input type="checkbox"  onClick={Sidebar}/>
+          <div className="flex justify-between ">
+            <label className="  btn-circle swap swap-rotate  md:flex">
+              <input type="checkbox" onClick={Sidebar}  />
 
               <svg
-                className="swap-off fill-current"
+                className="swap-off fill-current my-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -52,29 +47,25 @@ const Navbar = ({Sidebar}) => {
                 <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
               </svg>
             </label>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-              />
-            </svg>
-          </button>
-             
-       </div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className=" w-6 h-6 "
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+          </div>
 
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-5 items-center ">
-            
-
-
+          <span className="flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-5 items-center ">
             <a className="ml-3 text-gray-500">
               <figure>
                 <img

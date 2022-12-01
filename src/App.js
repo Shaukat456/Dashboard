@@ -31,6 +31,7 @@ import { useState } from "react";
 function App() {
   const [sidebarState, setSidebarState] = useState(true);
   function SidebarToggle() {
+    
     setSidebarState((prevState) => !prevState);
   }
   return (
@@ -41,7 +42,7 @@ function App() {
         <div className="flex flex-col mx-3">
           <Navbar Sidebar={SidebarToggle} />
 
-          <div class="grid my-32  lg:grid-cols-3 gap-3 mx-5 md:grid-cols-2 sm:grid-cols-1 grid-cols-none ">
+          <div class="grid my-32  lg:grid-cols-3 gap-3 mx-5 sm:grid-cols-1 grid-cols-none ">
             <div class="md:col-span-2 col col-span-3 ">
               <WelcomeBack />
             </div>
