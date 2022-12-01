@@ -23,8 +23,8 @@ const Navbar = ({ Sidebar }) => {
         <div  className=" px-5 py-8 mx-auto flex items-center sm:flex-row animSide   justify-start sm:container overflow-hidden     ">
         
           {/* hamburger menu icon */}
-          <div className="flex justify-between ">
-            <label className="  btn-circle swap swap-rotate  md:flex">
+          <div className="flex md:justify-between justify-center ">
+            <label className="  btn-circle swap swap-rotate   flex   lg:hidden  ">
               <input type="checkbox" onClick={Sidebar}  />
 
               <svg
@@ -65,7 +65,7 @@ const Navbar = ({ Sidebar }) => {
             </button>
           </div>
 
-          <span className="flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-5 items-center ">
+          <span className="flex sm:ml-auto sm:mt-0 mt-4 md:justify-center sm:justify-start space-x-5 items-center ">
             <a className="ml-3 text-gray-500">
               <figure>
                 <img

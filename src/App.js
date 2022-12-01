@@ -26,18 +26,22 @@ import PieChart from "./components/PieChart";
 import { Card } from "@material-tailwind/react";
 import { PieCard } from "./components/PieCard";
 import { TopApp } from "./components/TopApp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [sidebarState, setSidebarState] = useState(true);
+
+  useEffect(() => {
+    setSidebarState(true)
+  }, []);
+
   function SidebarToggle() {
-    
     setSidebarState((prevState) => !prevState);
   }
   return (
     <>
       <div className="flex ">
-        {sidebarState && <Sidebar />}
+        {sidebarState && <Sidebar  />}
 
         <div className="flex flex-col mx-3">
           <Navbar Sidebar={SidebarToggle} />
