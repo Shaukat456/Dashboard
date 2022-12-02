@@ -37,7 +37,7 @@ const Table = ({ ProductName, Color, Category, status }) => {
               <td class="py-4 px-6">Sliver</td>
               <td class="py-4 px-6">Laptop</td>
               <td class="py-4 ">
-                <h1 className="  font-semibold  text-red-800 bg-red-200  sm:max-w-fit rounded-xl px-5      text-xs">
+                <h1 className="  font-semibold  text-red-800 bg-red-200  sm:w-fit rounded-xl px-5      text-xs">
                   Out of Date
                 </h1>
               </td>

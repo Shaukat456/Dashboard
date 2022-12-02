@@ -5,7 +5,7 @@ const Card2 = () => {
     <div>
       <div
         id="cardbg"
-        className="flex bg-green-900 text-white w-full p-6  space-x-3 rounded-2xl"
+        className="flex bg-green-900  text-white w-full p-6  space-x-3 rounded-2xl"
       >
         <div
           className="radial-progress text-xl  text-green-500"
