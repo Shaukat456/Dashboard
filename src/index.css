@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.card2{
+    background-color: rgb(3, 78, 3) ;
+}
 
 
 body{

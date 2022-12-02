@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import style from  '../components/Navbar.module.css'
 const Navbar = ({ Sidebar }) => {
   const reference = useRef(null);
   window.onscroll = function () {
@@ -19,22 +19,22 @@ const Navbar = ({ Sidebar }) => {
 
   return (
     <>
-      <div ref={reference} className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6 md:w-screen   sm:w-[102vw] w-[200vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver ">
-        <div  className=" px-5 py-8 mx-auto flex items-center sm:flex-row animSide   justify-start sm:container overflow-hidden     ">
+      <div ref={reference} className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6   sm:w-[101vw] w-[117vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver ">
+        <div  className=" px-5 py-8 mx-auto flex items-center sm:flex-row animSide   md:justify-start justify-center sm:container overflow-hidden     ">
         
           {/* hamburger menu icon */}
-          <div className="flex md:justify-between justify-center ">
-            <label className="  btn-circle swap swap-rotate   flex   lg:hidden  ">
+          <div className="flex  " >
+            <label className="  btn-circle swap swap-rotate   flex     ">
               <input type="checkbox" onClick={Sidebar}  />
 
               <svg
-                className="swap-off fill-current my-2"
+                className="swap-off fill-current my-2 "
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
                 viewBox="0 0 512 512"
               >
-                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
               </svg>
 
               <svg
@@ -44,7 +44,9 @@ const Navbar = ({ Sidebar }) => {
                 height="32"
                 viewBox="0 0 512 512"
               >
-                <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+
+                
               </svg>
             </label>
             <button>
@@ -54,7 +56,7 @@ const Navbar = ({ Sidebar }) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className=" w-6 h-6 "
+                className=" w-6 h-6 hover:scale-125 cursor-pointer "
               >
                 <path
                   strokeLinecap="round"
@@ -65,11 +67,11 @@ const Navbar = ({ Sidebar }) => {
             </button>
           </div>
 
-          <span className="flex sm:ml-auto sm:mt-0 mt-4 md:justify-center sm:justify-start space-x-5 items-center ">
-            <a className="ml-3 text-gray-500">
-              <figure>
+          <span   className="flex sm:ml-auto sm:mt-0 mt-4 md:justify-center sm:justify-start space-x-5 items-center ">
+            <a className="ml-3 text-gray-500 cursor-pointer transition-all hover:transition-all hover:scale-125 hover:bg-slate-200 rounded-xl"  > 
+              <figure className={style.trs}>
                 <img
-                  src="https://minimals.cc/assets/icons/flags/ic_flag_en.svg"
+                  src="https://minimals.cc/assets/icons/flags/ic_flag_en.svg "
                   alt="flag"
                 />
               </figure>
@@ -82,7 +84,7 @@ const Navbar = ({ Sidebar }) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-6 h-6 hover:scale-125 cursor-pointer hover:bg-slate-200 rounded-xl transition-all hover:transition-all "
               >
                 <path
                   strokeLinecap="round"
@@ -98,7 +100,7 @@ const Navbar = ({ Sidebar }) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-6 h-6 hover:scale-125 cursor-pointer hover:bg-slate-200 rounded-xl transition-all hover:transition-all" 
               >
                 <path
                   strokeLinecap="round"
@@ -113,7 +115,7 @@ const Navbar = ({ Sidebar }) => {
                   width={30}
                   src={require("../avatar.png")}
                   alt=""
-                  className="rounded-2xl"
+                  className="cursor-pointer rounded-2xl hover:scale-125 transition-all hover:transition-all "
                 />
               </figure>
             </a>
