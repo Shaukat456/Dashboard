@@ -19,8 +19,8 @@ const Navbar = ({ Sidebar }) => {
 
   return (
     <>
-      <div ref={reference} className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6   sm:w-[101vw] w-[117vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver ">
-        <div  className=" px-5 py-8 mx-auto flex items-center sm:flex-row animSide   md:justify-start justify-center sm:container overflow-hidden     ">
+      <div ref={reference} className="  transition-all bgover text-gray-600 body-font backdrop-blur-sm fixed lg:w-5/6   sm:w-[101vw] w-[110vw] z-50 bg-blend-lighten hover:bg-blend-darken bg-transparent NavOver ">
+        <div  className=" px-5 py-8 mx-auto flex items-center sm:flex-row animSide   md:justify-start justify-between sm:container overflow-hidden     ">
         
           {/* hamburger menu icon */}
           <div className="flex  " >
